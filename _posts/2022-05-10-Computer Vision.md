@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "U-Net Literature Review"
-categories: "Computer Vision"
+categories: `Computer Vision`
 tag: [Computer Vision, U-Net]
 ---
 
