@@ -1,8 +1,7 @@
 ---
 layout: single
 title:  "U-Net Literature Review"
-categories: `Computer Vision`
-tag: [Computer Vision, U-Net]
+categories: [Computer Vision]
 ---
 
 ## Overlap Tile Strategy
