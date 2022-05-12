@@ -1,8 +1,14 @@
 ---
 layout: single
-title:  "Deep Learning"
+title:  "U-Net Literature Review"
 categories: [Computer Vision]
 ---
+
+## Overlap Tile Strategy
+
+- Each two tiles which are green boxes has split parts of single nuclei.
+- And it is hard to guarantee that the tile that has a remainder part of the nucleus is adjacent to the current tile. -> This is what I guess
+- It requires that left half and right half of the nuclei has to be classified as one single label, and it takes additional effort to make them have identical classification.
 
 ## Non-Linearlity
 
@@ -32,38 +38,3 @@ Stochastic Gradient Descent
 
 - Training and updating based on single data in batch.	
 - Stochastic means probability. Training with entire datasets are not using probability concept. Meanwhile, training data with sampling can prevent model from being overfitted.
-
-
-
-## Learning Rate Decay
-
-In order to converge to the lowest point of the graph.
-
-method
-
- - Step decay
-   - Starting with big learning rate. 
-   - Changing learning rate after certain epoch.
- - Exponential decay
-   - Gamma = e^-t 
-     - t is round. t is going to converge as round goes on.
- - Cosine decay
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
