@@ -68,8 +68,6 @@ print(tensor_in_cuda + tensor_in_CPU)	# cause error
 
 
 
-
-
 ### <br>Considering the batch size 
 
 An additional dimension for the batch_size should be added at the input.
@@ -85,6 +83,12 @@ criterion = nn.MSELoss()
 loss = criterion(output, target)
 print(loss)
 ```
+
+
+
+
+
+<br><br><br>
 
 
 
