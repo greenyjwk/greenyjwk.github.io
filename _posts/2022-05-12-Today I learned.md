@@ -5,31 +5,27 @@ title:  "Today I learned"
 
 ### Difference between var and std
 
-Ji
+
+
+### <br>What is cuda
 
 
 
+### <br>gradient and gradient from torch.requires
 
-
-### What is cuda
-
-
-
-### gradient and gradient from torch.requires
+When model is being trained, it is being trained to reduce the error. The direction of this is called 'gradient'.
 
 
 
-
-
-### What is super(Net, self).__init__
-
-
-
-### How to inherit nn.Module
+### <br>What is super(Net, self).__init__
 
 
 
-### What do we mean by parameters in deep learning?
+### <br>How to inherit nn.Module
+
+
+
+### <br>What do we mean by parameters in deep learning?
 
 Weight and Bias are called as parameter in machine learning.
 
@@ -80,10 +76,5 @@ for param in net.parameters():
   param.data.sub_(param.grad.data * learning_rate)
   
 learning_rate = 0.01
-for param in net.parameters():
-  
-	
+for param in net.parameters(): 
 ```
-
-
-

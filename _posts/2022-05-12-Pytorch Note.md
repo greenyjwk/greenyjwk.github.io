@@ -4,7 +4,59 @@ title:  "Pytorch Note"
 categories: pytorch
 ---
 
-### torch.matmul
+### Summary()
+
+Summarize the network when it comes to layer.
+
+```python
+mlp_model = SimpleMLP().cuda()
+train_loss1 = []
+test_accuracy = []
+for epoch in tqdm(range(NUM_EPOCH)):
+  train_loss1.append(fit(mlp_model, train_loader))
+  test_accuracy1.append(eval(mlp_model, test_loader))
+summary(mlp_model, input_size = (3,32,32) )
+```
+
+
+
+### <br>label.cpu()
+
+Moves the parameters to CPU from GPU
+
+```python
+model.eval()
+device = newxt(model.parameters()).device.index
+pred_labels = []
+# it should be detached(turned off required grad etc) to be a numpy
+label.cpu().detach().numpy() 
+```
+
+
+
+### <br>argmax(axis = 1)
+
+Extracts the maximum value from the arguments.
+
+```python
+pred_labels = pred_labels.argmax(axis=1)
+accuracy = ((real_labels == pred_labels)/len(real_labels) ) * 100
+```
+
+
+
+### <br>model.eval()
+
+This is such as the switch to make the model is suitable with inference. Dropout, batchNorm layers are switched to fit the testing. At the same time model.train() should be called before it switches to training.
+
+```python
+def eval(model, testdataLoader):
+	model.eval()
+```
+
+
+
+### <br>torch.matmul
 
 Matrix multiplication
 
@@ -57,6 +109,52 @@ print(tensor_in_cuda + tensor_in_CPU)	# cause error
 ```
 
 
+
+<br>Batch size is added in front of the shape as well.
+
+```python
+X, y = datasets. make_circles(n_samples = npts, random_state = 123, noise = 0.2, factor = 0.3)
+x_data = torch.Tensor(X)
+y_data = torch.Tensor(y.reshape(500, 1))
+print(x_data.shape)			# torch.Size([500,2]) -> 500 is aded because 500 is batch size.
+print(y_data.shape)		# torch.Size([500,1]) -> 500 is aded because 500 is batch size.
+```
+
+
+
+### <br>reshape()
+
+The functions returns the same number of datasets with changing the shape
+
+```python
+a = torch.tensor([1,2,3,3,4,5,6,7,8])
+a_reshaped = a.reshape([8, 1])
+print(a_reshaped)
+
+# tensor([[1, 2],
+#        [3, 4],
+#        [5, 6],
+#        [7, 8]])
+# torch.size([8])
+```
+
+### <br>unsqueeze()
+
+This is used to reshape a tensor by adding a new dimensions at given positions.
+
+```python
+a = torch.Tensor([[1,2], [3,4]])
+a_squeezed = a.unsqueeze()
+print(a_squeezed.shape)
+
+a_squeezed_0 = a.unsqueeze(0)
+# add dimension at 0
+# torch.Size([1, 5])
+
+a_squeezed_1 = a.unsqueeze(1)
+# add dimension at 1
+# torch.Size([5, 1])
+```
 
 ### <br>cuda using Strategy
 
