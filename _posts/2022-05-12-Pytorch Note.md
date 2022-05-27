@@ -4,7 +4,232 @@ title:  "Pytorch Note"
 categories: pytorch
 ---
 
-### Summary()
+### <br>torch.sigmoid()
+
+```python
+sigmoid_output = (torch.sigmoid(outputs) > 0.5).float()
+sigmoid_output
+# tensor([[1., 1., 1., 1.],
+#        [1., 1., 1., 1.],
+#        [1., 1., 1., 1.],
+#        [1., 1., 1., 1.]])
+```
+
+### <br>torch.cat
+
+Concatenates the given sequence of tensors in the given dimension
+
+```python
+original = torch.ones(4,4)
+# axis is specified to determine where to tensors be concatenated
+concatenated = torch.zeros(4,4)
+merged_tensor = torch.cat( (original, concatenated), 1)
+print(merged_tensor.shape)
+# torch.Size([4,8])
+```
+
+### <br>torch.nn.functional.pad
+
+Pad tensor
+
+```python
+tensor = torch.rand(4,4)
+padded_tensor = F.pad(tensor, (2, 2, 2, 5))
+print(padded_tensor.shape)
+# torch.size([11,8])
+```
+
+### <br>scalar type should be long data type
+
+long is synonymous with integer. PyTorch doesn't accept a Float tensor as categorical target, Need to cast the tensor as long datatype.
+
+```python
+# CORRECT CASE
+input = torch.ones((5000, 2) , dtype = torch.float)
+label = torch.ones(5000, dtype = torch.long)
+criterion = nn.CrossEntropyLoss()
+loss = criterion(input, label)
+```
+
+```python
+# ERROR CASE
+# label = torch.ones(5000, dtype = torch.float) 
+# cuases error that is 'expected scalar type Long but found Float'
+input = torch.ones((5000, 2) , dtype = torch.float)
+label = torch.ones(5000, dtype = torch.float)
+criterion = nn.CrossEntropyLoss()
+loss = criterion(input, label)
+```
+
+
+
+#### <br>tensor.dtype
+
+Access the datatype of tensor
+
+```python
+tensor = torch.rand(50,1,128,128)
+tensor.dtype
+# torch.float32
+```
+
+### <br>torch.from_numpy
+
+Creates a tensor from a numpy.ndarry. The returned tensor and ndarray share the same memory. Modification to the tensor will be reflected in the ndarray and vice versa.
+
+```python
+a = np.array([1,2,3])
+tensor_a = torch.from_numpy(a)
+batch_train_x = torch.from_numpy(x_train[i * batch_size : (i + 1) * batch_size]).float()
+```
+
+
+
+
+
+### <br>tqdm -> trange
+
+Trange can be used as a convenient shortcut
+
+```python
+for i in tqdm(range(1000))
+```
+
+```python
+from tqdm import trange
+import time
+
+epochs = 10
+t = trange(epochs, leav=True)
+for i in t:
+  print(i)
+  time.sleep(2)
+```
+
+
+
+
+
+### <br>summary()
+
+Provide the visualization of model
+
+```python
+from torchsummary import summary
+unet = UNet(in_channel=3, out_channel=2) 
+summary(unet, (3,128,128), device='cpu')
+```
+
+### <br>reshape()
+
+Return the same data and tensor but with specified shape.
+
+```python
+output_resahped = output.reshape(batch_size*width_out*height_out, 2)
+# output_resahped has a shape : torch.Size([batch_size * width_out * height_out, 2])
+```
+
+### <br>permute()
+
+Rearrange the original tensor according to the desired order of the dimension. It returns the new tensor that has the same total number of tensors.
+
+```python
+outputs = outputs.permute(0,1,3,2)
+```
+
+### <br>
+
+### <br>os.walk()
+
+Python method walk() generates the file names in a directory tree by walking the tree either top-down or bottom-up.
+
+```python
+os.walk(".", topdown=False)
+```
+
+
+
+### <br>np.where()
+
+Returns elements chosen from x or y depending on condition.
+
+```
+np.where()
+```
+
+
+
+
+
+### <br>masking
+
+obj_ids is [2] shape array, and
+
+```python
+obj_ids[:, None, None]
+# creates [1,1,2] shape array.
+
+masks = mask == obj_ids[:, None, None]
+# mask is [255,555] shape array, and masks will have [2,255,555] shape true/false array.
+```
+
+
+
+### <br>Split the color-encoded mask into a set
+
+```python
+obj_ids = [1,2]
+temp = obj_ids[:, None, None]
+print(temp)
+# [ [ [1] ]
+#   [ [2] ] ]
+```
+
+
+
+### <br>np.unique()
+
+Find the unique elements of an array.
+
+```python
+mask = Image.open(mask_path)
+mask = np.array(mask)
+obj_ids = np.unique(mask)
+```
+
+
+
+### <br>natsorted()
+
+Sorts an iterable naturally, not lexicographically. Returns a list containing a sorted copy of the iterable.
+
+```python
+imgs = list(natsorted(os.listdir(os.path.join(root, "image"))))
+```
+
+
+
+### <br>os.listdir()
+
+The function is used to get the list of all files and directories in the specified directory.
+
+```python
+self.imgs = list(natsorted(os.listdir(os.path.join(root, "image"))))
+```
+
+
+
+### <br>os.path.join()
+
+```python
+path = "/home"
+print(os.path.join(path, "User/Public/", "Documents", ""))
+# /home/User/Public/Documents/
+```
+
+
+
+### <br>Summary()
 
 Summarize the network when it comes to layer.
 
@@ -181,12 +406,6 @@ criterion = nn.MSELoss()
 loss = criterion(output, target)
 print(loss)
 ```
-
-
-
-
-
-<br><br><br>
 
 
 
