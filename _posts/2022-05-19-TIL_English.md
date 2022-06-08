@@ -67,3 +67,15 @@ Assimilate _ take in and understand fully _ (사고, 습관, 사고방식) 등�
 erode _ wear away _ 서서히 파괴하다
 
 But education for individuals, families and communities can help erode the stigma and improve access to treatment. 
+
+
+
+### <br>How does heart transplant work? 
+
+June 8 wed
+
+![Ted Ed-54](../images/2022-05-19-TIL_English/Ted Ed-54.jpg)
+
+![Ted Ed-55](../images/2022-05-19-TIL_English/Ted Ed-55.jpg)
+
+![Ted Ed-56](../images/2022-05-19-TIL_English/Ted Ed-56.jpg)

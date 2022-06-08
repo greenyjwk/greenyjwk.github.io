@@ -4,7 +4,15 @@ title:  "Computer Vision"
 categories: [Computer Vision]
 ---
 
-### Overlap Tile Strategy
+### <br>DICE Score
+
+This is the score that measures the performance of the image segmentation accuracy. The more overlap area between output of the model and ground truth, it has higher score.
+$$
+Dice(𝐴,𝐵)=2|𝐴⋅𝐵|/|𝐴|+|𝐵|
+$$
+
+
+### <br>Overlap Tile Strategy
 
 - Each two tiles which are green boxes has split parts of single nuclei.
 - And it is hard to guarantee that the tile that has a remainder part of the nucleus is adjacent to the current tile. -> This is what I guess

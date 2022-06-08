@@ -4,7 +4,49 @@ title:  "Python Note"
 categories: python
 ---
 
+### <br>Adding subarry to   sing np.append()
 
+```python
+self.images = np.array([])
+self.images = io.imread(os.path.join(folder, filename), plugin='pil')
+#(512, 512)
+
+self.images = np.expand_dims(self.images, axis=0)
+#(1, 512, 512)
+
+self.images = np.append(self.images, [io.imread(os.path.join(folder, filename), plugin='pil')] , 0)
+#(n, 512, 512)
+```
+
+
+
+
+
+### <br>count_nonzero()
+
+It returns the count of non zero values in given Numpy array.
+
+```python
+arr = np.array([True, False, True, True])
+true_count = np.count_nonzero(arr)
+print(true_count)
+# 3
+```
+
+
+
+### <br>Access numpy array via slicing and direct access
+
+Direct access and slicing array have different output shape.
+
+```python
+# x_train.shape = [73,3,128,128]
+print(x_train[0].shape)
+# (3, 128, 128)
+
+print(x_train[0:1].shape)
+# (1, 3, 128, 128)
+```
 
 ### <br>np.squeeze()
 

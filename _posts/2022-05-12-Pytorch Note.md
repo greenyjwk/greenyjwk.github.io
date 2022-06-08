@@ -4,7 +4,82 @@ title:  "Pytorch Note"
 categories: pytorch
 ---
 
-### <br>torch.sigmoid()
+### <br>torchvision.compose
+
+It doesn't generate multiple images. The augmentation methodology inside is applied all at once.
+
+```python
+Transforms = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.RandomGrayscale(p=0.5),
+        transforms.CenterCrop(100),
+        transforms.GaussianBlur(3),
+        transforms.RandomHorizontalFlip(p=0.5)
+        ])
+```
+
+### <br>loading trained model and switch to eval()
+
+eval() turns off dropout layer, batch norm layer for evaluation.
+
+```python
+unet = UNet(in_channel=3,out_channel=2)
+unet.load_state_dict(torch.load("/content/drive/MyDrive/Symmetry Nucleus Image Augmentation/U-Net/u-net_params.pt"))
+unet.eval()
+```
+
+### <br>torch.detach()
+
+- Detach the tensor from the current computational graph when we don't need to trace gradient computation.
+- Need to detach tensor when we need to move the tensor from GPU to CPU.
+
+```python
+import torch
+
+x = torch.tensor(2.0, requires_grad = True)
+x_detach = x.detach()
+print("Tensor with detach:", x_detach)
+```
+
+### <br>*
+
+It is not dot product. It is element-wise multiplication.
+
+```python
+tensorA = torch.rand(2,2)
+# [ 
+#  [2, 3],
+#	 [5, 6]
+# ]
+tensorB = torch.rand(2,2)
+# [ 
+#  [1, 2],
+#	 [3, 4]
+# ]
+
+overlapped = tensorA * tensorB
+print(overlapped)
+# [ 
+#  [2, 6],
+#	 [15, 24]
+# ]
+```
+
+
+
+### <br>torch.size()
+
+returns the size of the tensor. If the dim is not specified then it returns the shape of the whole tensor.
+
+```python
+tensorA = torch.rand(4,6)
+size(tensorA)
+# torch.Size([4,6])
+```
+
+
+
+### torch.sigmoid()
 
 ```python
 sigmoid_output = (torch.sigmoid(outputs) > 0.5).float()
@@ -105,10 +180,6 @@ for i in t:
   print(i)
   time.sleep(2)
 ```
-
-
-
-
 
 ### <br>summary()
 
