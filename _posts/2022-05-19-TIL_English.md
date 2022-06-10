@@ -79,3 +79,19 @@ June 8 wed
 ![Ted Ed-55](../images/2022-05-19-TIL_English/Ted Ed-55.jpg)
 
 ![Ted Ed-56](../images/2022-05-19-TIL_English/Ted Ed-56.jpg)
+
+
+
+
+
+
+
+### <br>Nature Fortress: How cacti keep water in and predators out? 
+
+June 9 Thu
+
+![Ted Ed-57](../images/2022-05-19-TIL_English/Ted Ed-57.jpg)
+
+![Ted Ed-58](../images/2022-05-19-TIL_English/Ted Ed-58.jpg)
+
+![Ted Ed-59](../images/2022-05-19-TIL_English/Ted Ed-59.jpg)

@@ -1,8 +1,40 @@
 ---
 layout: single
 title:  "Pytorch Note"
-categories: pytorch
+categories: PyTorch
 ---
+
+### <br>IOError: decoder libtiff not available
+
+Once I deleted splitter tif files(by online tif files splitter), it worked out.
+
+### <br>RuntimeError: expected scalar type Double but found Float
+
+Float is also counted as Scalar type double. 
+
+https://discuss.pytorch.org/t/runtimeerror-expected-object-of-scalar-type-double-but-got-scalar-type-float-for-argument-2-weight/38961/14
+
+
+
+### <br>torch.float, torch.double
+
+torch.float32( aka torch.float)
+
+torch.float64( aka torch.double)
+
+The torch tensor default type is torch.float32( aka torch.float). The model's parameters are also torch.float32 type by default.
+
+However, the default type of Numpy ndarray is Numpy.float64. So when I load data using numpy(float64) then convert it to torch tensor, then the data would be torch.float64 which is aka torch.double. For this reason, the code below is necessary in some cases.
+
+```python
+tensor.float() # is needed to convert data to torch.float32
+```
+
+https://stackoverflow.com/questions/60239051/pytorch-runtimeerror-expected-object-of-scalar-type-double-but-got-scalar-type
+
+
+
+
 
 ### <br>torchvision.compose
 
@@ -148,6 +180,8 @@ tensor.dtype
 # torch.float32
 ```
 
+
+
 ### <br>torch.from_numpy
 
 Creates a tensor from a numpy.ndarry. The returned tensor and ndarray share the same memory. Modification to the tensor will be reflected in the ndarray and vice versa.
@@ -157,8 +191,6 @@ a = np.array([1,2,3])
 tensor_a = torch.from_numpy(a)
 batch_train_x = torch.from_numpy(x_train[i * batch_size : (i + 1) * batch_size]).float()
 ```
-
-
 
 
 
@@ -181,6 +213,8 @@ for i in t:
   time.sleep(2)
 ```
 
+
+
 ### <br>summary()
 
 Provide the visualization of model
@@ -190,6 +224,8 @@ from torchsummary import summary
 unet = UNet(in_channel=3, out_channel=2) 
 summary(unet, (3,128,128), device='cpu')
 ```
+
+
 
 ### <br>reshape()
 
