@@ -4,6 +4,30 @@ title:  "Deep Learning"
 categories: [Deep Learning]
 ---
 
+### <br>Off-line vs On-line Learning
+
+#### <br>on-line training
+
+<br>Once the modes is trained, then model is not updated as long as it is not fully retrained with datasets.
+
+#### <br>off-line training
+
+<br>model is being trained depending on the training datasets.
+
+
+
+### <br>Contrastive Learning
+
+In order to mitigate the lack of datasets issues, unlabeled different images are used for model to have capability to distinguish the images.
+
+
+
+### <br>The correct number of epoch
+
+There is no certain specific number of epochs. The more important is validation and training error. If the two metrics keep dropping as training goes on, the training should be continued. So the number of epochs should be decided depending on the training and validation error tendency.
+
+
+
 ### Cross Entropy
 
 From deep learning, cross entropy loss is used to have difference between probability distribution between predicted outcomes and real labels.

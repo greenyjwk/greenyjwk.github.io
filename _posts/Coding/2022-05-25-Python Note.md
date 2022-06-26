@@ -4,6 +4,10 @@ title:  "Python Note"
 categories: python
 ---
 
+### <br> [ERROR] logp = torch.gather(logp, 1, target.view(n, 1, H, W))
+
+
+
 ### <br>Adding subarry to   sing np.append()
 
 ```python
@@ -92,14 +96,14 @@ int_ndarray
 ```python
 arr1 = [2, 8, 125]
 arr2 = [3, 3, 15]
-out_arr = geek.maximum(in_arr1, in_arr2) 
+out_arr = np.maximum(in_arr1, in_arr2) 
 # [3, 8, 125]
 ```
 
 ```python
 arr1 = [np.nan, 0, np.nan]
 arr2 = [np.nan, np.nan, 0]
-out_arr = geek.maximum(in_arr1, in_arr2)
+out_arr = np.maximum(in_arr1, in_arr2)
 # [nan, nan, nan]
 ```
 
@@ -123,6 +127,26 @@ print(mask)
 axis = 0 then add dimension to the outmost layer<br>axis = -1 then add dimension to the innermost layer
 
 ```python
+# x1 = np.array([1, 2])
+# x2 = np.array([1, 2])
+# x.shape
+# (2,)
+
+y2 = np.expand_dims(x2, axis=0)
+y2
+# array([[1, 2]])
+y.shape
+# (1, 2)
+
+y1 = np.expand_dims(x1, axis=1)
+y1
+# array([[1],
+#       [2]])
+# (2, 1)
+
+
+y.shape
+# (2, 1)
 mask_ = np.expand_dims(resized_dummy_img, axis=-1)
 ```
 

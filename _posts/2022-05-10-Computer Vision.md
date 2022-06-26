@@ -4,6 +4,8 @@ title:  "Computer Vision"
 categories: [Computer Vision]
 ---
 
+<br>Macro F1
+
 ### <br>DICE Score
 
 This is the score that measures the performance of the image segmentation accuracy. The more overlap area between output of the model and ground truth, it has higher score.

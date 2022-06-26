@@ -4,6 +4,92 @@ title:  "Pytorch Note"
 categories: PyTorch
 ---
 
+### <br>torch.view
+
+Returns a new tensor with the same data as the self tensor but of a different shape
+
+```python
+x = torch.randn(4, 4)
+x.size()
+# torch.Size([4, 4])
+
+z = x.view(-1, 8)
+z.size()
+# torch.Size([2, 8])
+```
+
+
+
+### <br>torch.argmax
+
+Returns the indices of the maximum value of all elements in the input tensor
+
+```python
+a = torch.randn(4, 4)
+a
+# tensor([[ 1.3398,  0.2663, -0.2686,  0.2450],
+#        [-0.7401, -0.8805, -0.3402, -1.1936],
+#        [ 0.4907, -1.3948, -1.0691, -0.3132],
+#        [-1.6092,  0.5419, -0.2993,  0.3195]])
+torch.argmax(a, dim=1)
+tensor([ 0,  2,  0,  1])
+```
+
+
+
+### <br>torch.nn.CrossEntropyLoss
+
+It returns the average of the difference between label and predicted values in each class.
+
+![Screen Shot 2022-06-26 at 1.12.55 AM](../images/2022-05-12-Pytorch Note/Screen Shot 2022-06-26 at 1.12.55 AM.png)
+
+```python
+# internal implementdation of the torch.nn.CrossEntropyLoss()
+
+import torch
+import torch.nn as nn
+import numpy as np
+output = [0.8982, 0.805, 0.6393, 0.9983, 0.5731, 0.0469, 0.556, 0.1476, 0.8404, 0.5544]
+target = [1]
+loss1 = np.log(sum(np.exp(output))) - output[target[0]]
+output = [0.9457, 0.0195, 0.9846, 0.3231, 0.1605, 0.3143, 0.9508, 0.2762, 0.7276, 0.4332]
+target = [5]
+loss2 = np.log(sum(np.exp(output))) - output[target[0]]
+print((loss1 + loss2)/2) # 2.351937720511233
+```
+
+
+
+### <br>Dataloader
+
+It returns the tuple and also it returns torch tensor not numpy array.
+
+
+
+### <br>Pytorch Tensor vs Numpy ndarray
+
+Pytorch tensor can be operated on CUDA-capable NVIDA GPU, which requires heavy matrix computation.
+
+### <br>TF.to_tensor
+
+Convert a PIL image or numpy.ndarray to tensor. This function does not support torchscript.
+
+
+
+### <br>model.train()
+
+Changes to training mode of the model
+
+
+
+### <br>tensorboard
+
+
+
+### <br>cuda out of memory
+
+It happens when GPU is out of memory.
+
 ### <br>IOError: decoder libtiff not available
 
 Once I deleted splitter tif files(by online tif files splitter), it worked out.
@@ -31,10 +117,6 @@ tensor.float() # is needed to convert data to torch.float32
 ```
 
 https://stackoverflow.com/questions/60239051/pytorch-runtimeerror-expected-object-of-scalar-type-double-but-got-scalar-type
-
-
-
-
 
 ### <br>torchvision.compose
 

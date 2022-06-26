@@ -1,4 +1,22 @@
-### The biggest mistakes in mapmaking history
+---
+layout: single
+title:  "Pytorch Note"
+categories: PyTorch
+
+---
+
+### <br>June 13 
+
+- The CDC has ended the covid-19 testing requirement for air travelers entering the country.
+- Children under 5 years old are the only US age group who still is not eligible to receive a covid-19 vaccine.
+- Global markets and US stock futures fell early today, indicating a downbeat start to the trading week after a broad sell-off on Wall Street.
+- A bipartisan group of senators announced an agreement on gun safety legislation Sunday in the wake of several deadly mass shootings.
+
+
+
+
+
+### <br>The biggest mistakes in mapmaking history
 
 The video says the transition of the world map and how cartographers in many different countries over a long period have depicted the world map .
 
@@ -70,6 +88,8 @@ But education for individuals, families and communities can help erode the stigm
 
 
 
+------
+
 ### <br>How does heart transplant work? 
 
 June 8 wed
@@ -82,9 +102,7 @@ June 8 wed
 
 
 
-
-
-
+------
 
 ### <br>Nature Fortress: How cacti keep water in and predators out? 
 
