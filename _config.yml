@@ -103,14 +103,14 @@ analytics:
 # Site Author
 author:
   name             : "Ji Kim"
-  avatar           : /assets/images/profile.jpeg
+  avatar           : assets/images/profile.jpeg
   bio              : "Hello!"
   location         : "Rochester, NY"
-  email            : 
+  email            : "greenyjwk@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:greenyjwk@gmail.com"
+      # url: "mailto:greenyjwk@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -240,16 +240,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
 
 # HTML Compression
