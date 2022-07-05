@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Python Note"
-categories: Dev
+categories: [Dev]
 ---
 
 ### <br> [ERROR] logp = torch.gather(logp, 1, target.view(n, 1, H, W))
