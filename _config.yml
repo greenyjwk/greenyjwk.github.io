@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ji Woong's Blog"
+title                    : "Ji's Blog"
 title_separator          : "-"
 # subtitle                 : "Where there is a will, there is a way"
 name                     : "Ji"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Ji Kim"
   avatar           : assets/images/profile.jpeg
-  bio              : "Hello!"
+  bio              : "Hello:)"
   location         : "Rochester, NY"
   email            : "greenyjwk@gmail.com"
   links:
