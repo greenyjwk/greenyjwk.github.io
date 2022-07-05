@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Pytorch Note"
-categories: ["Development"]
+categories: [Development]
 ---
 
 ### <br>torch.contiguous()
