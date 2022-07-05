@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "Image Preprocessing Library"
-categories: [skimage]
+title:  "Skimage"
+categories: [dev]
 ---
 
 ## skimage

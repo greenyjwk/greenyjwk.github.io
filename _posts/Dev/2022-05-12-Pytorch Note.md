@@ -1,8 +1,102 @@
 ---
 layout: single
 title:  "Pytorch Note"
-categories: PyTorch
+categories: Dev
 ---
+
+### <br>torch.contiguous()
+
+Returns a contiguous in memory tensor containing the same data as `self` tensor. If `self` tensor is already in the specified memory format, this function returns the `self` tensor.
+
+### <br>torch.mm
+
+Performs a matrix multiplication of the matrices inputs.
+
+```python
+mat1 = torch.randn(2, 3)
+mat2 = torch.randn(3, 3)
+torch.mm(mat1, mat2)
+# tensor([[ 0.4851,  0.5037, -0.3633],
+#        [-0.0760, -3.6705,  2.4784]])
+```
+
+
+
+### <br>t()
+
+Expects that the input to be <=2-D tensor and transposes dimensions 0 and 1.
+
+```python
+x = torch.randn(())
+x
+# tensor(0.1995)
+x_t = x.t()
+# tensor(0.1995)
+
+x2 = torch.randn(3)
+x2 
+# tensor([ 2.4320, -0.4608,  0.7702])
+torch.t(x)
+# tensor([ 2.4320, -0.4608,  0.7702])
+
+x3 = torch.randn(2,3)
+x3
+# tensor([[ 0.4875,  0.9158, -0.5872],
+#         [ 0.3938, -0.6929,  0.6932]])
+
+x3 = torch.t(x3)
+x3
+# tensor([[ 0.4875,  0.3938],
+#        [ 0.9158, -0.6929],
+#        [-0.5872,  0.6932]])
+```
+
+
+
+### <br>torch.exp()
+
+Returns a new tensor with the exponential of the elements of the input tensor.
+
+```python
+tensor1 = torch.exp(torch.tensor([0, math.log(2.)]))
+output = torch.exp(torch.tensor(1))
+# tensor(2.7183)
+```
+
+
+
+### <br>torch.matmul
+
+```python
+tensor1 = torch.randn(10, 3, 4)
+tensor2 = torch.randn(4, 5)
+torch.matmul(tensor1, tensor2).size()
+# torch.Size([10, 3, 5])
+```
+
+
+
+
+
+### <br>tqdm
+
+```python
+number_list = list(range(100))
+for x in tqdm(number_list):
+  sleep(0.05)
+print("Completed!")
+```
+
+```python
+def train_fn(loader, model, optimizer, loss_fn, scaler):
+    loop = tqdm(loader)
+    for batch_idx, (data, targets) in enumerate(loop):
+        data = data.to(device=DEVICE)
+```
+
+
+
+
 
 ### <br>torch.view
 

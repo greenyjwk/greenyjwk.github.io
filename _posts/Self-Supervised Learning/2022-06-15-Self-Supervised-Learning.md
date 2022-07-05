@@ -1,8 +1,24 @@
 ---
 layout: single
-title:  "Self-Supervised Learning"
+title: "Self-Supervised Learning"
 categories: [Self-Supervised Learning]
 ---
+
+### Self-Supervised Learning aims to provide backbone of the model for classification tasks.
+
+
+
+
+
+### <br> nce loss Function
+
+
+
+
+
+### Pretext Task
+
+The task that model can answer what tasks have been performed in the images such as making images flipped, zigsaw puzzle.
 
 ### <br>Contrastive Self-Supervised Learning
 

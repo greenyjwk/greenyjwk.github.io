@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Python Note"
-categories: python
+categories: Dev
 ---
 
 ### <br> [ERROR] logp = torch.gather(logp, 1, target.view(n, 1, H, W))
@@ -21,8 +21,6 @@ self.images = np.expand_dims(self.images, axis=0)
 self.images = np.append(self.images, [io.imread(os.path.join(folder, filename), plugin='pil')] , 0)
 #(n, 512, 512)
 ```
-
-
 
 
 
