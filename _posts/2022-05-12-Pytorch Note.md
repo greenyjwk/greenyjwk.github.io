@@ -2,6 +2,7 @@
 layout: single
 title:  "Pytorch Note"
 categories: [Development]
+tag: temp
 ---
 
 ### <br>torch.contiguous()
