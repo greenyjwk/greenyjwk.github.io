@@ -10,14 +10,14 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
+# theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Ji's Blog"
-title_separator          : "-"
+title_separator          : "|"
 # subtitle                 : "Where there is a will, there is a way"
 name                     : "Ji"
 description              : "Logging the work and study"
@@ -105,14 +105,14 @@ analytics:
 # Site Author
 author:
   name             : "Ji Kim"
-  avatar           : "/assets/images/profile.jpeg"
+  avatar           : assets/images/profile.jpeg
   bio              : "Hello!"
   location         : "Rochester, NY"
-  email            : "greenyjwk@gmail.com"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:greenyjwk@gmail.com"
+      url: "mailto:greenyjwk@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -162,7 +162,7 @@ exclude:
   - log
   - node_modules
   - package.json
-  # - package-lock.json
+  - package-lock.json
   - Rakefile
   - README
   - tmp
@@ -214,7 +214,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -223,7 +222,6 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
 
@@ -244,16 +242,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -284,5 +282,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-      
