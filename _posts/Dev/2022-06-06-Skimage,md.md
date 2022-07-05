@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Skimage"
-categories: [dev]
+categories: Dev
 ---
 
 ## skimage
