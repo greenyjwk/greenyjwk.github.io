@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "Pytorch Note"
-categories: PyTorch
+title:  "English"
+categories: English
 
 ---
 
