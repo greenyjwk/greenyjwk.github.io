@@ -136,8 +136,6 @@ tensor([ 0,  2,  0,  1])
 
 It returns the average of the difference between label and predicted values in each class.
 
-![Screen Shot 2022-06-26 at 1.12.55 AM](../images/2022-05-12-Pytorch Note/Screen Shot 2022-06-26 at 1.12.55 AM.png)
-
 ```python
 # internal implementdation of the torch.nn.CrossEntropyLoss()
 
