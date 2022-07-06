@@ -4,6 +4,10 @@ title:  "Deep Learning"
 categories: [Deep Learning]
 ---
 
+### <br>what is node in deep learning?
+
+A node in deep learning is a computational unit that has one or multiple inputs and outputs.
+
 ### <br>Off-line vs On-line Learning
 
 #### <br>on-line training

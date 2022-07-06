@@ -4,6 +4,37 @@ title:  "Pytorch Note"
 categories: [Dev]
 ---
 
+
+
+
+
+### <br>set_grad_enabled()
+
+Function that sets gradient calculation on or off.
+
+```python
+# torch.set_grad_enabled(False)
+
+x = torch.tensor([1.], requres_grad = True)
+is_train = False
+with torch.set_grad_enabled(is_train)
+	y = x * 2
+y.requires_grad
+# False
+
+torch.set_grad_enabled(True)
+y = x * 2
+y.requires_grad
+# True
+
+torch.set_grad_enabled(False)
+y = x * 2
+y.requires_grad
+# False
+```
+
+
+
 ### <br>torch.contiguous()
 
 Returns a contiguous in memory tensor containing the same data as `self` tensor. If `self` tensor is already in the specified memory format, this function returns the `self` tensor.
