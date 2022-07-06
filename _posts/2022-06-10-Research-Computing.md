@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Research Computing"
-categories: [GPU]
+categories: [Deep Learning]
 ---
 
 ### nvidia-smi

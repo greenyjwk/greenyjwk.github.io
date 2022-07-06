@@ -1,8 +1,7 @@
 ---
 layout: single
 title:  "Pytorch Note"
-categories: [Development]
-tag: temp
+categories: [Dev]
 ---
 
 ### <br>torch.contiguous()
