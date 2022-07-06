@@ -179,7 +179,7 @@
 
 .author__bio {
   margin: 0;
-  font-size: 0.6em;
+  font-size: 0.8em;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -204,6 +204,9 @@
   .author__urls {
     span.label {
       padding-left: 5px;
+
+      // Added
+      font-size: 0.8em;
     }
   }
 
