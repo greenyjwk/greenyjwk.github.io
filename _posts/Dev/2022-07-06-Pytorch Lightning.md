@@ -4,7 +4,7 @@ title:  "Pytorch Lightning"
 categories: [Dev]
 ---
 
-Pytorch Lightning is the open source library that provides. It enables the efficient cross over among GPU, CPU or TPU calculation, and organizes training, validation, test etc modules more concisely which is called efficient abstraction. It helps to implement neural network code less lines of codes than Pytorch.
+Pytorch Lightning is the open source framework that provides. It enables the efficient cross over among GPU, CPU or TPU calculation, and organizes training, validation, test etc modules more concisely which is called efficient abstraction. It helps to implement neural network code less lines of codes than Pytorch.
 
 
 
