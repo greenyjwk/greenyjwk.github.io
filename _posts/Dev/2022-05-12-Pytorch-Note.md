@@ -4,11 +4,7 @@ title:  "Pytorch Note"
 categories: [Dev]
 ---
 
-
-
-
-
-### <br>set_grad_enabled()
+### set_grad_enabled()
 
 Function that sets gradient calculation on or off.
 
