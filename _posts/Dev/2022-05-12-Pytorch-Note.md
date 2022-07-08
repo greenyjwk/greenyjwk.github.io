@@ -5,6 +5,16 @@ categories: [Dev]
 
 ---
 
+##### fill_
+
+Fill the specified value into the tensor
+
+```python
+filled_tensorTensor(neg.shape).fill_(math.e ** (1/temperature))
+```
+
+------
+
 ##### / operation
 
 ```python
