@@ -5,6 +5,25 @@ categories: [Dev]
 
 ---
 
+
+
+
+
+
+
+###### torch.mean()
+
+It returns mean value of all element in input tensor.
+
+```python
+tensor = torch.randn(1,3)
+# tensor([[0.2294, -0.5481, 1.3288]])
+torch.mean(a)
+# tensor(0.3367)
+```
+
+------
+
 ##### fill_
 
 Fill the specified value into the tensor
