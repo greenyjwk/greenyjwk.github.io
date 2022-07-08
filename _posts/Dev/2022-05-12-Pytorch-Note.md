@@ -2,7 +2,53 @@
 layout: single
 title:  "Pytorch Note"
 categories: [Dev]
+
 ---
+
+#### / operation
+
+```python
+x = torch.randn(4,1)
+print(x)
+y = torch.randn(4,1)
+print(y)
+ans = x/y
+print(ans)
+#tensor([[-1.3820],
+#        [-0.3512],
+#        [-0.7213],
+#        [ 0.4231]])
+#tensor([[ 0.6778],
+#        [-0.1667],
+#        [-0.4451],
+#        [-0.2691]])
+#tensor([[-2.0389],
+#        [ 2.1065],
+#        [ 1.6205],
+#        [-1.5722]])
+```
+
+------
+
+#### torch.exp()
+
+```python
+tensor = torch.randn(4,1)
+print(tensor)
+#tensor([[ 1.2396],
+#        [-0.0947],
+#        [-2.0467],
+#        [ 1.0210]])
+
+exp=torch.exp(tensor)
+print(exp)
+#tensor([[3.4543],
+#        [0.9096],
+#        [0.1292],
+#        [2.7759]])
+```
+
+------
 
 ### set_grad_enabled()
 
@@ -31,11 +77,24 @@ y.requires_grad
 
 
 
-### <br>torch.contiguous()
+------
+
+### torch.contiguous()
 
 Returns a contiguous in memory tensor containing the same data as `self` tensor. If `self` tensor is already in the specified memory format, this function returns the `self` tensor.
 
-### <br>torch.mm
+If narrow(), expand(), view() or transpose() are used, the tensor used those functions do not create another tensor but it just modifies the value itself without changing memory address.
+
+For this reason, torch.contiguous() creates another tensor.
+
+```
+```
+
+
+
+------
+
+### torch.mm
 
 Performs a matrix multiplication of the matrices inputs.
 
