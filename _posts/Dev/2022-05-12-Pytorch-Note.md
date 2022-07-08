@@ -5,7 +5,7 @@ categories: [Dev]
 
 ---
 
-#### / operation
+##### / operation
 
 ```python
 x = torch.randn(4,1)
@@ -30,7 +30,7 @@ print(ans)
 
 ------
 
-#### torch.exp()
+##### torch.exp()
 
 ```python
 tensor = torch.randn(4,1)
@@ -50,7 +50,7 @@ print(exp)
 
 ------
 
-### set_grad_enabled()
+##### set_grad_enabled()
 
 Function that sets gradient calculation on or off.
 
@@ -79,7 +79,7 @@ y.requires_grad
 
 ------
 
-### torch.contiguous()
+##### torch.contiguous()
 
 Returns a contiguous in memory tensor containing the same data as `self` tensor. If `self` tensor is already in the specified memory format, this function returns the `self` tensor.
 
