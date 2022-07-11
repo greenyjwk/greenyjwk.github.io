@@ -8,7 +8,7 @@ categories: [Research Paper Review]
 
 SimCLR which is one of the self-supervised learning mouthed has issue in inefficiency to train. The paper states that the two main issues in training the self supervised learning which one is under-clustering and the other is over-clustering. Under clustering means that the model can not be trained to discriminate the objects when the negative sample pairs are insufficient, in contrast over-clustering implies that forces model to classify the objects which is the same class in different clusters.
 
-###### A figure for under-clustering and over-clustering
+<Figure for under-clustering and over-clustering>
 
 
 
