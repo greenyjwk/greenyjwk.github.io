@@ -4,36 +4,50 @@ title: "Self-Supervised Learning"
 categories: [Self-Supervised Learning]
 ---
 
-### Self-Supervised Learning aims to provide backbone of the model for classification tasks.
+##### Self-Supervised Learning aims to provide backbone of the model for classification tasks.
+
+
+
+------
+
+##### Under-Clustering
+
+Model has insufficient negative pairs of datasets to differentiate actual object classes.
+
+##### Over-Clustering
+
+Model has excessive number of negative pairs datasets so that it is difficult to differentiate object classes.
+
+------
+
+###  nce loss Function
 
 
 
 
 
-### <br> nce loss Function
-
-
-
-
+------
 
 ### Pretext Task
 
 The task that model can answer what tasks have been performed in the images such as making images flipped, zigsaw puzzle.
 
-### <br>Contrastive Self-Supervised Learning
+------
+
+### Contrastive Self-Supervised Learning
 
 - Self-Supervised Learning
 - What is Contrastive Self Supervised Learning
 - SimCLR
 - Difference between Contrastive Self-Supervised Learning and Non-Contrastive Self-Supervised Learning
 
-
+------
 
 #### Self-Supervised Learning
 
 It is training algorithms with datasets that have no labeled data. It uses the structure of the data, for example, sentence that has hidden word in it is used as input data and model predicts the hidden word. Without using the labels of the data, structure of the data itself is used for self-supervised learning model to be trained. On other words, the structure of the input datasets is used as a supervisory signal. Since Self-Supervised Learning uses feedback signal from the data, it is not unsupervised learning, and actually it is more supervised than standard supervised learning.
 
-
+------
 
 #### The reason of Self-Supervised Learning is hard to used in Computer Vision than NLP
 
@@ -53,13 +67,15 @@ It is easy to associate score for the prediction score to all possible words, fo
 - Downstream task
   - The task that I actually want to solve by utilizing pertained model
 
+------
 
-
-#### <br>Joint embedding
+#### Joint embedding
 
 Assuming there are images X and Y, that are slightly different versions of the same image. The model is trained to lower the energy from the outputs of the model. So if the X and Y are different versions of the same image, then the model will produce the similar embedding vectors for the two images.
 
-### <br>Contrastive energy-based SSL
+------
+
+### Contrastive energy-based SSL
 
 It is based on simple idea of constructing X and Y that are not compatible, and adjusting the parameters of the model so that the corresponding output energy is large.
 

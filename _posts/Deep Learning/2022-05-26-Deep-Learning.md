@@ -4,7 +4,13 @@ title:  "Deep Learning"
 categories: [Deep Learning]
 ---
 
-### <br>what is node in deep learning?
+##### Margin-based Losses
+
+It is particularly useful for binary classification. In contrast to the distance-based losses. It doesn't care about difference between prediction and target. It penalizes prediction based on how well they agree with sign on the target.
+
+------
+
+### what is node in deep learning?
 
 A node in deep learning is a computational unit that has one or multiple inputs and outputs.
 
