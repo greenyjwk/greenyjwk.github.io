@@ -10,7 +10,9 @@ SimCLR which is one of the self-supervised learning mouthed has issue in ineffic
 
 ###### A figure for under-clustering and over-clustering
 
-![Screen Shot 2022-07-11 at 4.44.33 PM](../images/2022-07-11-Truncated Triplet Loss/Screen Shot 2022-07-11 at 4.44.33 PM.png)
+
+
+![Screen Shot 2022-07-11 at 4.44.33 PM](../images/2022-07-11-Truncated Triplet Loss/Screen Shot 2022-07-11 at 4.44.33 PM-7572593.png)
 
 
 
