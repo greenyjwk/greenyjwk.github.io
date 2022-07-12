@@ -4,16 +4,16 @@ title:  "English"
 categories: English
 ---
 
+With whom do you want to achieve that goal of the faith?
+
+While these subvariants may partially escape the immunity produced by vaccine and prir infection, vaccination sill likely protects against severe illness.
+
 ### <br>June 13 
 
 - The CDC has ended the covid-19 testing requirement for air travelers entering the country.
 - Children under 5 years old are the only US age group who still is not eligible to receive a covid-19 vaccine.
 - Global markets and US stock futures fell early today, indicating a downbeat start to the trading week after a broad sell-off on Wall Street.
 - A bipartisan group of senators announced an agreement on gun safety legislation Sunday in the wake of several deadly mass shootings.
-
-
-
-
 
 ### <br>The biggest mistakes in mapmaking history
 
@@ -84,31 +84,3 @@ Assimilate _ take in and understand fully _ (사고, 습관, 사고방식) 등�
 erode _ wear away _ 서서히 파괴하다
 
 But education for individuals, families and communities can help erode the stigma and improve access to treatment. 
-
-
-
-------
-
-### <br>How does heart transplant work? 
-
-June 8 wed
-
-![Ted Ed-54](../images/2022-05-19-TIL_English/Ted Ed-54.jpg)
-
-![Ted Ed-55](../images/2022-05-19-TIL_English/Ted Ed-55.jpg)
-
-![Ted Ed-56](../images/2022-05-19-TIL_English/Ted Ed-56.jpg)
-
-
-
-------
-
-### <br>Nature Fortress: How cacti keep water in and predators out? 
-
-June 9 Thu
-
-![Ted Ed-57](../images/2022-05-19-TIL_English/Ted Ed-57.jpg)
-
-![Ted Ed-58](../images/2022-05-19-TIL_English/Ted Ed-58.jpg)
-
-![Ted Ed-59](../images/2022-05-19-TIL_English/Ted Ed-59.jpg)
