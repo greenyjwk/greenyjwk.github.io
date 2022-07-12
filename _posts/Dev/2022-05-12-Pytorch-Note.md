@@ -5,12 +5,6 @@ categories: [Dev]
 
 ---
 
-
-
-
-
-
-
 ###### torch.mean()
 
 It returns mean value of all element in input tensor.
