@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "English"
-categories: English
+categories: ["Learning English"]
 ---
 
 With whom do you want to achieve that goal of the faith?

@@ -5,6 +5,20 @@ categories: [Dev]
 
 ---
 
+
+
+###### torch.distributed()
+
+The distributed package provided by pytorch enables researchers to easily parallelize their computations across processes and clusters of machines.
+
+```python
+
+```
+
+
+
+------
+
 ###### torch.mean()
 
 It returns mean value of all element in input tensor.
