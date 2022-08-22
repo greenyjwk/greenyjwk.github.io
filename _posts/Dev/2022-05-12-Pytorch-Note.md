@@ -7,12 +7,6 @@ categories: [Dev]
 
 
 
-
-
-![Screen Shot 2022-06-14 at 3.58.05 PM](../../images/2022-05-12-Pytorch-Note/Screen Shot 2022-06-14 at 3.58.05 PM.png)
-
-
-
 ##### num_workers
 
 
