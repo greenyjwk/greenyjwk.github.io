@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Basic Terms"
-categories: [Statistics]
+categories: [Probability and Statistics]
 ---
 
 ###### Expectation

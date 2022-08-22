@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Bernoulli Distribution/Binomial Distribution"
-categories: [Statistics]
+categories: [Probability and Statistics]
 ---
 
 - Bernoulli Trial is the trial that only has two outcomes which are success or fail.
