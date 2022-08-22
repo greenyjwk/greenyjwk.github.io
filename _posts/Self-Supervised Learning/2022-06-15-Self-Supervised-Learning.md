@@ -8,6 +8,28 @@ categories: [Self-Supervised Learning]
 
 
 
+##### Large Batch
+
+(e.g. SImclr,CLIP) They needs large batch sizes since that's the way it could have sufficient collection of negative samples.
+
+------
+
+##### Image Augmentation
+
+Contrastive learning tries to augment images by adding noises, but still keeps the features of the images.
+
+------
+
+##### Linear Evaluation
+
+
+
+------
+
+##### Margin Triplet Loss Function
+
+
+
 ------
 
 ##### Under-Clustering

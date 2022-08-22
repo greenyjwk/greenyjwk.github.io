@@ -2,13 +2,46 @@
 layout: single
 title:  "Python Note"
 categories: [Dev]
+
 ---
 
-### <br> [ERROR] logp = torch.gather(logp, 1, target.view(n, 1, H, W))
 
 
+__call__
 
-### <br>Adding subarry to   sing np.append()
+It is the reserved function that be called with instance name.
+
+------
+
+##### _ _ main _ _
+
+The module that I put as a start point has __main__ as name. But the module that I import has its module name rather than __main__
+
+------
+
+##### _ _ init _ _
+
+It specifies that the current directory is package, it could be empty. If other modules are imported inside of the _ _ init _ _, then the modules are included in the package. 
+
+------
+
+##### What is _ _main_ _
+
+It specifies the start point of the source code.
+
+------
+
+##### Numpy array converting to uint8 to plot
+
+Unsigned Integers of 8 bits. A uint8 data type contains all whole numbers from 0 to 255. As with all unsigned numbers, the values must be non-negative. Uint8's are mostly used in graphics (colors are always non-negative).
+
+------
+
+###  [ERROR] logp = torch.gather(logp, 1, target.view(n, 1, H, W))
+
+------
+
+### Adding subarry to   sing np.append()
 
 ```python
 self.images = np.array([])

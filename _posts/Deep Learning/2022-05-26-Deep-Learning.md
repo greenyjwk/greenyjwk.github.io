@@ -4,13 +4,39 @@ title:  "Deep Learning"
 categories: [Deep Learning]
 ---
 
+##### Loss Function
+
+Loss function is the function that specifies the difference between probability distribution of prediction and label. 
+
+------
+
+##### Cross Entropy
+
+Entropy means that that it is hard to predict what prediction value would be gotten. For example, dice has more entropy than coin, since dice has six cases to get in each trial.
+
+It uses true probability distribution(labeling) and predicted probability distribution, and it gets the total loss of the difference between prediction and labeling. Thus, if the cross entropy loss is big, then it means that the model got wrong answer for the label.
+
+------
+
+##### KL divergence
+
+
+
+------
+
+##### What is Message Passing Interface(MPI)
+
+MPI is a communication protocol for parallel programming. MPI enables applications to operate in parallel in distributed systems.
+
+------
+
 ##### Margin-based Losses
 
 It is particularly useful for binary classification. In contrast to the distance-based losses. It doesn't care about difference between prediction and target. It penalizes prediction based on how well they agree with sign on the target.
 
 ------
 
-### what is node in deep learning?
+##### what is node in deep learning?
 
 A node in deep learning is a computational unit that has one or multiple inputs and outputs.
 

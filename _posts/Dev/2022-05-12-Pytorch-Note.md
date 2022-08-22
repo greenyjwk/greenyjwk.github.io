@@ -7,6 +7,18 @@ categories: [Dev]
 
 
 
+
+
+
+
+
+
+##### num_workers
+
+
+
+------
+
 ###### torch.distributed()
 
 The distributed package provided by pytorch enables researchers to easily parallelize their computations across processes and clusters of machines.
@@ -422,6 +434,23 @@ sigmoid_output
 ### <br>torch.cat
 
 Concatenates the given sequence of tensors in the given dimension
+
+can think of that dimension is the position of the array. So if the dim is torch.cat((x,x) , dim  = 0) shape is [4,3]
+
+```python
+x = torch.randn(2,3)
+# tensor([[ 0.6580, -1.0969, -0.4614],
+#        [-0.1034, -0.5790,  0.1497]])
+torch.cat((x,x,x), dim = 0 )
+# tensor([[ 0.6580, -1.0969, -0.4614],
+#        	[-0.1034, -0.5790,  0.1497],
+# 			 	[ 0.6580, -1.0969, -0.4614],
+#        	[-0.1034, -0.5790,  0.1497],
+# 			 	[	0.6580, -1.0969, -0.4614],
+#        	[-0.1034, -0.5790,  0.1497]])
+```
+
+
 
 ```python
 original = torch.ones(4,4)
