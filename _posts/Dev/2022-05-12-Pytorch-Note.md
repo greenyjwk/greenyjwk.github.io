@@ -14,11 +14,14 @@ categories: [Dev]
 mps doesn't support float64. And .to(torch.float) automatically converts from numpy ndarray to pytorch tensor float 64. So I need to convert numpy float 32 first. Then I need to convert Pytorch tensor.
 
 ```python
-"TypeError: Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead."
+""""
+TypeError: Cannot convert a MPS Tensor to float64 dtype as the MPS framework doesn't support float64. Please use float32 instead.
+""""
 
-# Previous version for CUDA
-# train_eeg = torch.from_numpy(train_eeg).to(torch.float).to(device)
-
+""""
+Previous version for CUDA
+train_eeg = torch.from_numpy(train_eeg).to(torch.float).to(device)
+""""
 
 train_eeg = np.float32(train_eeg)
 train_eye = np.float32(train_eye)
