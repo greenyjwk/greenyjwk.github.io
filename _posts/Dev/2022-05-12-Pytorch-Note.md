@@ -11,7 +11,7 @@ categories: [Dev]
 
 **mps is GPU accelerator for pytorch**
 
-mps doesn't support float64. And .to(torch.float) automatically converts from numpy ndarray to pytorch tensor float 64. So I need to convert numpy float 32 first. Then I need to convert Pytorch tensor.
+mps doesn't support float64. I had to convert numpy float 32 first. Then I converted Pytorch tensor.
 
 ```python
 """"
