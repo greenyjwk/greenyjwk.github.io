@@ -7,13 +7,41 @@ categories: [Dev]
 
 
 
-##### num_workers
+##### mps
+
+**mps is GPU accelerator for pytorch**
+
+mps doesn't support float64, and .to(torch.float) automatically converts to pytorch float 64. So I need to convey numpy float 32 first, then converts to pytorch tensor.
+
+```python
+train_eeg = np.float32(train_eeg)
+train_eye = np.float32(train_eye)
+test_eeg = np.float32(test_eeg)
+test_eye = np.float32(test_eye)
+
+train_eeg = torch.from_numpy(train_eeg).to(device)
+train_eye = torch.from_numpy(train_eye).to(device)
+test_eeg = torch.from_numpy(test_eeg).to(device)
+test_eye = torch.from_numpy(test_eye).to(device)
+```
+
+------
+
+
+
+##### parameters()
+
+
+
+```python
+
+```
 
 
 
 ------
 
-###### torch.distributed()
+##### torch.distributed()
 
 The distributed package provided by pytorch enables researchers to easily parallelize their computations across processes and clusters of machines.
 
@@ -25,7 +53,7 @@ The distributed package provided by pytorch enables researchers to easily parall
 
 ------
 
-###### torch.mean()
+##### torch.mean()
 
 It returns mean value of all element in input tensor.
 
