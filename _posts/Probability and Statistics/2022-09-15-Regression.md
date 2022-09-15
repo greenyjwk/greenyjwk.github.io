@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Regression"
-categories: [Regression]
+title: "Linear Regression"
+categories: [Probability and Statistics]
 ---
 
 

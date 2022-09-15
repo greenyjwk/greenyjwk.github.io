@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Self-Supervised Learning"
-categories: [Self-Supervised Learning]
+categories: [Deep Learning]
 ---
 
 ##### Self-Supervised Learning aims to provide backbone of the model for classification tasks.
