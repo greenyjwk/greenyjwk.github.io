@@ -4,25 +4,8 @@ title: "Statistics for Regression"
 categories: [Probability and Statistics]
 ---
 
-##### T-Statistics
 
 
+![Notetoking-1](../../images/2022-09-08-Regression/Notetoking-1.jpg)
 
-
-
-**Reference**
-
-
-
-**t-statistics**
-
-https://m.blog.naver.com/sendmethere/221333164258
-
-
-
-
-
-
-
-
-
+![Notetoking-2](../../images/2022-09-08-Regression/Notetoking-2.jpg)
