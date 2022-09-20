@@ -45,13 +45,37 @@ summary(lm.fit)
 
 
 
-##### Residuals
+1. ##### Residuals
 
 Residual means that the difference between the actual responses and predicted values. If the residuals are skewed then it means that predictor more falls off one side than the other side.
 
 
 
-##### References:
+2. ##### Coefficients
+
+
+
+3. ##### P-Value
+
+   temp
+
+   
+
+4. ##### Residual Standart Error
+
+   It means how well the linear regression model fits to the actual datasets.
+   $$
+   Residual Standard Error = √Σ(y – ŷ)2/df
+   $$
+   y: Datasets
+
+   ŷ: predicted values by the predictor
+
+   df: Degree of Freedom: Total number of observations - Total number of model parameters -1
+
+
+
+###### References:
 
 https://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R
 
