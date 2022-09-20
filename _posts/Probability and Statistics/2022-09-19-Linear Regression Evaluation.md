@@ -22,6 +22,8 @@ summary(lm.fit)
 
 
 
+Output:
+
 ```R
 # Call:
 # lm(formula = medv ~ lstat + age, data = Boston)
