@@ -1,5 +1,5 @@
 ---
-layout: single
+Signif. codes:layout: single
 title: "Linear Regression"
 categories: [Probability and Statistics]
 ---
