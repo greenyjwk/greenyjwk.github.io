@@ -65,7 +65,7 @@ Residual means that the difference between the actual responses and predicted va
 
 4. ##### Residual Standart Error
 
-   It means how well the linear regression model fits to the actual datasets.
+   It means how well the linear regression model fits to the actual datasets. The lower RSE score means that it is better accuracy than the regression model with higher RSE. Also, the high RSE stands for the datasets are spread out from the fitted regression line. 
    $$
    Residual Standard Error = √Σ(y – ŷ)2/df
    $$
@@ -74,6 +74,8 @@ Residual means that the difference between the actual responses and predicted va
    ŷ: predicted values by the predictor
 
    df: Degree of Freedom: Total number of observations - Total number of model parameters -1
+
+​		From the Residual Standard Error output, we can see that the RSE score is 6.173. It says that regression model estimates 'medv' with an average error of 6.173
 
 
 
