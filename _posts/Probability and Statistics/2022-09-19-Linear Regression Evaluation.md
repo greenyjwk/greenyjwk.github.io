@@ -20,8 +20,6 @@ lm.fit = lm(medv~lstat+age, data=Boston)
 summary(lm.fit)
 ```
 
-
-
 Output:
 
 ```R
