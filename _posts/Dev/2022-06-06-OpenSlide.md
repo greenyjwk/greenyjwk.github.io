@@ -4,25 +4,9 @@ title:  "OpenSlide"
 categories: [Dev]
 ---
 
-### <br>resize
-
-Resize serves and allows to specify an output image shape instead of a scaling factor. It should perform Gaussian smoothing to avoid aliasing artifacts.
-
-Aliasing: an error or distortion created in a digital image that usually appears as a jagged outline.
-
-```python
-img = resize(img, (IMG_HEIGHT, IMG_WIDTH), mode='constant', preserve_range=True)
-```
 
 
 
-io.imread returns numpy ndarray
 
-```python
-from skimage import io, transform, color
 
-path = drive_path + "/dummy_imageout.tif"
-img = io.imread(path)[0:1]
-print(type(img))
-```
 
