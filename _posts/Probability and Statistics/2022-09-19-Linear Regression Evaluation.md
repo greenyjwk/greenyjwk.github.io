@@ -51,27 +51,55 @@ Residual means that the difference between the actual responses and predicted va
 
 
 
-2. ##### Coefficients
+2. ##### Coefficient: Estimate
+
+It could be thought of the intercept and slope. 
+
+2. ##### Coefficient: Standard Error
+
+We use sample from the population to do the experiment and convenience. How can we know that the sample properly represents the population? Standard Error can give insight about that. Standard Error means that Standard deviation of group of sample mean. The formula of the Standard Error is like below.
+
+![Screen Shot 2022-09-24 at 12.14.05 AM](../../images/2022-09-19-Linear Regression Evaluation/Screen Shot 2022-09-24 at 12.14.05 AM.png)
+
+​															<Standard deviation of Population / square root of number of samples>
+
+Recap: Standard Error is the standard deviation between mean of samples. In case of regression, it measures the average amount that the coefficient estimates vary from the average value of response variable. 
 
 
 
-3. ##### P-Value
+https://soohee410.github.io/stat2
 
-   temp
+https://blog.naver.com/PostView.naver?blogId=vnf3751&logNo=221083269431&redirect=Dlog&widgetTypeCall=true&directAccess=false
 
-   
+https://ysyblog.tistory.com/166
 
-4. ##### Residual Standart Error
 
-   It means how well the linear regression model fits to the actual datasets. The lower RSE score means that it is better accuracy than the regression model with higher RSE. Also, the high RSE stands for the datasets are spread out from the fitted regression line. 
-   $$
-   Residual Standard Error = √Σ(y – ŷ)2/df
-   $$
-   y: Datasets
 
-   ŷ: predicted values by the predictor
+2. ##### Coefficient: t-value
 
-   df: Degree of Freedom: Total number of observations - Total number of model parameters -1
+The coefficient t-value is a measure of how many standard deviations our coefficient estimate is far away from 0. Large Standard deviation indicates that we could reject null hypothesis, so we could declare a relationship between speed and distance exist. In our example above, the t-statistic values are far away from zero and are large relatives to the standard error, which could indicate a relationship exists. In general, t-values are used to compute p-values as well.
+
+
+
+3. ##### Coefficient: Pr
+
+Small P-value is indication that we can reject the null hypothesis, that we can conclude relationship between predictor and response are valid. Typically cut-off point of P-Value is 5%. In the summary above, three asterisks describes that it is low P-value which we can reject null hypothesis. 
+
+##### 
+
+
+
+4. ##### Residual Standard Error
+
+It means how well the linear regression model fits to the actual datasets. The lower RSE score means that it is better accuracy than the regression model with higher RSE. Also, the high RSE stands for the datasets are spread out from the fitted regression line. 
+$$
+Residual Standard Error = √Σ(y – ŷ)2/df
+$$
+y: Datasets
+
+ŷ: predicted values by the predictor
+
+df: Degree of Freedom: Total number of observations - Total number of model parameters -1
 
 ​		From the Residual Standard Error output, we can see that the RSE score is 6.173. It says that regression model estimates 'medv' with an average error of 6.173
 
