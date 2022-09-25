@@ -46,3 +46,15 @@ We can conclude that maximum likelihood is the highest value when the the popula
 
 ##### Maximum A Posteriori
 
+
+
+
+
+
+
+
+
+
+
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=junimnje&logNo=221508500551
+
