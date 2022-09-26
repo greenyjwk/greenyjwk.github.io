@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "OpenSlide"
+title:  "OpenSlide Note"
 categories: [Dev]
 ---
 
