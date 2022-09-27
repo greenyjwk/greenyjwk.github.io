@@ -7,5 +7,3 @@ categories: [Probability and Statistics]
 
 
 ##### Residual Deviance
-
-We are the one 
