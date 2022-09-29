@@ -13,3 +13,9 @@ Mean value of probability that could occur.
 
 
 ###### Standard Deviation
+
+
+
+##### Posterior Probability
+
+Posterior probability is the chance that some certain cases and evidence are taken account into.
