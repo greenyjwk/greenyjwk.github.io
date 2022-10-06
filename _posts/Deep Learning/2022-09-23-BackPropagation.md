@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Deep Learning"
+title:  "Backpropagation"
 categories: [Deep Learning]
 ---
 
