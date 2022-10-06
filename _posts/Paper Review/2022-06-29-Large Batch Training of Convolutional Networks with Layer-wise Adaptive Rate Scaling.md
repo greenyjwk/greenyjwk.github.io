@@ -4,3 +4,4 @@ title: "Large Batch Training of Convolutional Networks with Layer-wise Adaptive 
 categories: [Research Paper Review]
 ---
 
+TBD
