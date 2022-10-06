@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Research Computing"
+title:  "Slurm"
 categories: [Deep Learning]
 ---
 

@@ -8,5 +8,6 @@ categories: [Deep Learning]
 
 
 
+![Backpropagation2-1](../../images/2022-09-23-BackPropagation/Backpropagation2-1.jpg)
 
-
+![Backpropagation2-2](../../images/2022-09-23-BackPropagation/Backpropagation2-2.jpg)
