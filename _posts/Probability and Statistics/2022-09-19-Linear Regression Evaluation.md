@@ -109,10 +109,10 @@ df: Degree of Freedom: Total number of observations - Total number of model para
 
    The R-Squared score gets higher as more features exist, so it is not appropriate to compare R-Squared score of linear regression model with high-order polynomial model. And even the non-significant features are added the R-Squared score increases because of the increase of number of features.
 
+
 $$
 R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST}
 $$
-
 
 
 ​		As it specifies, the formula involves SSE, SST and SSR. Thus, it is necessary to know the meaning of these three terms. 
