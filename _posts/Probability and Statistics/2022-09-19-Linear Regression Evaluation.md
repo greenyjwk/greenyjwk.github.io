@@ -4,11 +4,7 @@ title: "Linear Regression Evaluation using Summary() in R"
 categories: [Probability and Statistics]
 ---
 
-
-
-###### Linear Regression is very strong regression model that can predict the estimator value based on given datasets. From R, there is function  ln() that can create linear regression model and summary() function provides the performance about the linear regression model. From this article, we are going to look through the linear regression model evaluation methodology combing with R summary() function.
-
-
+Linear Regression is very strong regression model that can predict the estimator value based on given datasets. From R, there is function  ln() that can create linear regression model and summary() function provides the performance about the linear regression model. From this article, we are going to look through the linear regression model evaluation methodology combing with R summary() function.
 
 ```R
 library(MASS)
