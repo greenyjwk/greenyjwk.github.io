@@ -111,8 +111,6 @@ df: Degree of Freedom: Total number of observations - Total number of model para
 
 
 
-
-
 $$
 R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST}
 $$
