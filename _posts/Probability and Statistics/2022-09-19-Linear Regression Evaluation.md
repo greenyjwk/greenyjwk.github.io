@@ -120,12 +120,12 @@ $$
 
 
 
+$$
+
+$$
+
 
 ​		As it specifies, the formula involves SSE, SST and SSR. Thus, it is necessary to know the meaning of these three terms. 
-
-
-
-]
 
 ###### References:
 
