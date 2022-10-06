@@ -65,16 +65,6 @@ We use sample from the population to do the experiment and convenience. How can 
 
 Recap: Standard Error is the standard deviation between mean of samples. In case of regression, it measures the average amount that the coefficient estimates vary from the average value of response variable. 
 
-
-
-https://soohee410.github.io/stat2
-
-https://blog.naver.com/PostView.naver?blogId=vnf3751&logNo=221083269431&redirect=Dlog&widgetTypeCall=true&directAccess=false
-
-https://ysyblog.tistory.com/166
-
-
-
 2. ##### Coefficient: t-value
 
 The coefficient t-value is a measure of how many standard deviations our coefficient estimate is far away from 0. Large Standard deviation indicates that we could reject null hypothesis, so we could declare a relationship between speed and distance exist. In our example above, the t-statistic values are far away from zero and are large relatives to the standard error, which could indicate a relationship exists. In general, t-values are used to compute p-values as well.
@@ -83,9 +73,7 @@ The coefficient t-value is a measure of how many standard deviations our coeffic
 
 3. ##### Coefficient: Pr
 
-Small P-value is indication that we can reject the null hypothesis, that we can conclude relationship between predictor and response are valid. Typically cut-off point of P-Value is 5%. In the summary above, three asterisks describes that it is low P-value which we can reject null hypothesis. 
-
-##### 
+Small P-value is indication that we can reject the null hypothesis, that we can conclude relationship between predictor and response are valid. Typically cut-off point of P-Value is 5%. In the summary above, three asterisks describes that it is low P-value which we can reject null hypothesis.
 
 
 
@@ -110,20 +98,9 @@ df: Degree of Freedom: Total number of observations - Total number of model para
    The R-Squared score gets higher as more features exist, so it is not appropriate to compare R-Squared score of linear regression model with high-order polynomial model. And even the non-significant features are added the R-Squared score increases because of the increase of number of features.
 
 
-
 $$
 R^2 = \frac{SSE}{SST} = 1 - \frac{SSR}{SST}
 $$
-
-
-
-
-
-
-$$
-
-$$
-
 
 ​		As it specifies, the formula involves SSE, SST and SSR. Thus, it is necessary to know the meaning of these three terms. 
 
