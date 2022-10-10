@@ -4,8 +4,6 @@ title: "Probability and Statistics for Deep Learning[1]"
 categories: [Probability and Statistics]
 ---
 
-
-
 ###### Keywords: Probability Distribution, Marginal Probability, Conditional Probability, Bayes' Theorem
 
 
@@ -29,11 +27,11 @@ $$
 
 
 
-In other case, the distribution of the heigh in the classroom, the height is continutous value rather than discrete value so It is called **Continuous Random Variable**
+In other case, the distribution of the heigh in the classroom, the height is continuous value rather than discrete value so It is called **Continuous Random Variable**
 $$
 (1) f(x) \geq 0 \\
 (2) \begin{equation}
-  \int_0^\infty f(x)dx = 1
+\int_{-\infty}^{\infty}f(x)dx = 1
 \label{eq:1}
 \end{equation}
 $$
