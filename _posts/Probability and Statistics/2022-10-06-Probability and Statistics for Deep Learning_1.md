@@ -6,7 +6,7 @@ categories: [Probability and Statistics]
 
 
 
-Keywords: Probability Distribution, Marginal Probability, Conditional Probability, Bayes' Theorem
+###### Keywords: Probability Distribution, Marginal Probability, Conditional Probability, Bayes' Theorem
 
 
 
