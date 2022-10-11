@@ -67,6 +67,28 @@ p(X=x) = \sum_{y} p(X=x, Y=y)
 $$
 
 
+
+Marginalization is the sum of joint probability with all the cases of non-focused probability. 
+
+|              | Y = Head | Y = Back |
+| :----------: | :------: | :------: |
+| **X = Head** |   1/5    |   2/5    |
+| **X = Back** |   1/5    |   1/5    |
+
+
+$$
+\sum_{y} p(X=Head, Y=y)
+$$
+P(X=Head, Y=Head) + P(X=Head, Y=Back) is the marginalization probability in this case, marginalization probability of X = Head.
+
+|              | Y = Head | Y = Back | P(X) |
+| :----------: | :------: | :------: | :--: |
+| **X = Head** |   1/5    |   2/5    | 3/5  |
+| **X = Back** |   1/5    |   1/5    | 2/5  |
+|   **P(Y**)   |   2/5    |   3/5    |      |
+
+Marginal distribution can be specified like above. 
+
 The Joint Probability and Marginal Probability are related to the conditional probability.
 
 
