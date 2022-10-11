@@ -92,6 +92,37 @@ Otherwise, conditional probability only considers the case of raining. Thus, two
 
 
 
+
+
+From the conditional probability, the sum of the probability of certain condition is 1.
+$$
+p(Y=0|X=1)+p(Y=1|X=1)=1
+$$
+
+
+However, the below doesn't guarantee 1 as sum of probability.
+$$
+p(Y=0|X=1)+p(Y=0|X=0)
+$$
+
+
+
+
+According to the conditional probability formula, it can be transformed like below, and joint probability and marginalization can be applied to calculate the conditional probability.
+$$
+p(Y=0|X=1) = \frac{p(X=1,Y=0)}{p(X=1)} \\
+=(\frac{joint \ probability}{marginalization})\\
+=\frac{1/16}{7/16} \\
+=\frac{1}{7}
+$$
+
+
+From the formula above, we can conclude it. Interpretation of the formula is that we can calculate joint probability by calculating the marginalization from the conditional probability.
+$$
+p(x,y) = p(y|x)p(x)
+$$
+
+
 ###### Reference:
 
 https://doooob.tistory.com/249
