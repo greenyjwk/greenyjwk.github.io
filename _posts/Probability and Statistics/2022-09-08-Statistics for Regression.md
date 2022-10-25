@@ -27,7 +27,7 @@ $$
 
 
 
-##### Residual Standard Error
+##### Residual Standard Error (RSE)
 
 It is the standard deviation of the residuals.
 
