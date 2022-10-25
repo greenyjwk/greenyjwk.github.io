@@ -18,7 +18,7 @@ Anova is the variance analysis, that analyze the relationship between variance o
 
 ##### Residual Sum of Squares (RSS)
 
-It is the variance of the interval that is not explained by the regression model.
+It is the variance of the interval that is not explained by the regression model.</br>
 $$
 RSS = \sum({y_i}-\hat{y_i})^2
 $$
@@ -29,7 +29,7 @@ $$
 
 ##### Residual Standard Error (RSE)
 
-It is the standard deviation of the residuals.
+It is the standard deviation of the residuals.</br>
 
 $$
 RSE = \sqrt{\frac{1}{n-p-1}*RSS}
@@ -39,7 +39,7 @@ $$
 
 ##### Explained Sum of Squares (ESS)
 
-Variance of the predicted value by regression model.
+Variance of the predicted value by regression model.</br>
 
 
 $$
