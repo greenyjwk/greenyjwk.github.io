@@ -37,10 +37,6 @@ $$
 
 
 
-
-
-
-
 ##### Explained Sum of Squares (ESS)
 
 Variance of the predicted value by regression model.
