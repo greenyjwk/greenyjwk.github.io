@@ -4,16 +4,11 @@ title: "Bernoulli Distribution"
 categories: [Probability and Statistics]
 ---
 
-###### Keywords: Conditional Probability, Bayes' Theorem
+###### Keywords: Bernoulli Distribution, Binomial Distribution
 
 
 
-ever, the below doesn't guarantee 1 as sum of probability.
-$$
-p(Y=0|X=1)+p(Y=0|X=0)
-$$
+##### Bernoulli Distribution
 
+The trial that only has two outcome is called Bernoulli Trial. Flipping coins is one of the most popular example of the Bernoulli Trial.
 
-###### Reference:
-
-https://doooob.tistory.com/249
