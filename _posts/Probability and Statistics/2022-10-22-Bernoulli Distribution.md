@@ -16,4 +16,4 @@ The trial that only has two outcome is called Bernoulli Trial. Flipping coins is
 
 ##### Bernoulli Random Variables
 
-Bernoulli Random Variables are the variables that the values labelled to 0 and 1.
+Bernoulli Random Variables are the variables that the values labelled to 0 and 1(or 1 and -1). There are only two values so it is discrete random variables.
