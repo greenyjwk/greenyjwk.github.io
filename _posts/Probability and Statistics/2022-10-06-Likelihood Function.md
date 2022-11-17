@@ -52,6 +52,20 @@ We can conclude that maximum likelihood is the highest value when the the popula
 
 
 
+##### Posterior Probability
+
+- Why the posterior probability hard to calculate in deep learning? 
+
+  Posterior = (prior * likelihood) / evidence
+
+  In order to calculate 'evidence' the all the variables are needed to be integrated. As more variables the harder to calculate the posterior probability. That's why the Markov Chain Monte Carlo is used to estimate it.
+
+
+
+
+
+
+
 
 
 

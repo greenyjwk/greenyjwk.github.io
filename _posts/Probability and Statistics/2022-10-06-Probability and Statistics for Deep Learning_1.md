@@ -93,6 +93,12 @@ The Joint Probability and Marginal Probability are related to the conditional pr
 
 
 
+
+
+
+
+
+
 Reference:
 
 https://doooob.tistory.com/249
